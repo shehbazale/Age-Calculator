@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    /* background-image: url('./image/age.png'); */
+    background: linear-gradient(to bottom, #0f0c29, #2b6363, #24243e);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+   background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.container{
+    display: flex;
+    flex-direction:column;
+   /* background: #0f6892; */
+    margin: 50px auto;
+  width: 30%;
+  background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38")
+  no-repeat center/ cover;
+  box-shadow: 5px 20px 50px #000;
+ /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+ padding: 25px;
+ border-radius: 10px;
+}
+
+.container #left{
+    text-align: left;
+} 
+.container span{
+    box-shadow: 0 4px 8px 0 rgba(102, 167, 174, 0.536);
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(195, 197, 199));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 5px 20px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+.container span:hover {
+    background: linear-gradient(to right, rgb(171, 168, 168), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+  }
+.container p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+   
+}
+.container .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15px;
+    align-items: center;
+}
+.container .content .year, .month, .day{
+    align-items: center;
+    color: white;
+    padding: 10px;
+    
+}
+.container .content .year p, .month p, .day p{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+.container .content .year h5, .month h5, .day h5{
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+.container .input_items{
+    width: 100%;
+    /* height: 0px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.container .input_items input{
+    width: 60%;
+    height: 40px;
+    border: 1px solid gray;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;    
+  font-size: 16px;
+
+}
+button{
+    height: 40px;
+    background-color:#ffffff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight:bold;
+    border: 1px solid  #2b6363;
+    color:black;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+}
+button::after{
+    background: #2b6363;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+button:hover{
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+button:hover:after{
+    width: 100%;
+}
+button:active{
+    transform: translateY(4px);
+}
+span{
+    margin-top: 20px;
+}
+ span:hover{
+    cursor:pointer;
+  
+}
+span h2:hover{
+    color: black;
+}
